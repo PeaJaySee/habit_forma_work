@@ -1,0 +1,1 @@
+web: gunicorn habit_forma.wsgi
