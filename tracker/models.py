@@ -17,3 +17,6 @@ class Progress(models.Model):
 
     def __str__(self):
         return f"{self.habit.name} - {self.date}"
+    
+    class Meta:
+        verbose_name_plural = "Progress"
