@@ -1,5 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views import generic
+from .models import Habit
 # Create your views here.
-def my_test(request):
-    return HttpResponse('Hello, World!')
+
+class HabitList(generic.ListView):
+    model = Habit

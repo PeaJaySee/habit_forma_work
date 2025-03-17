@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from tracker.views import my_test
+from tracker.views import HabitList
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("tracker.urls"), name="tracker-urls"),

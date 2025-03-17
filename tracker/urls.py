@@ -2,5 +2,5 @@ from . import views
 from django.urls import path
 
 urlpatterns = [
-    path("", views.my_test, name="home"), #placeholder
+    path("", views.HabitList.as_view(), name="home"), #placeholder
 ]
