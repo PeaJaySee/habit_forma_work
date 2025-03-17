@@ -8,14 +8,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Views Part 1</title>
+    <title>Habit Forma</title>
 </head>
 
 <body>
+    
     <h1>Habits list</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Habit</button>
+    </form>
+
     {% for habit in habit_list %}
-    <h2>{{habit.name}}</h2>
-    <p>{{habit.description}}</p>
+    <h2>Name: {{habit.name}}</h2>
+    <p>Dexcription: {{habit.description}}</p>
+    <p>Frequency: {{habit.frequency}}</p>
     <p>Creator: {{habit.user}}</p>
     {% endfor %}
 </body>
