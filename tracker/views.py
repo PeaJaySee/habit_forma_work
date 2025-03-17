@@ -16,6 +16,9 @@ class HabitListView(LoginRequiredMixin, ListView, FormView):
     success_url = reverse_lazy('home')
     login_url = 'login'  # Redirect to login page if not authenticated
 
+    def get_queryset(self):
+        return Habit.objects.filter(user=self.request.user)
+
     def form_valid(self, form):
         habit = form.save(commit=False)
         habit.user = self.request.user
