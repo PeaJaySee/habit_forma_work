@@ -10,8 +10,9 @@ The app can be accessed via the following link: https://habit-forma-32fb84497168
 
 A project board has been used to track must-have, should-have and could-have items, and to aid in application on AGILE methodology:
 
-A screenshot of the board, in progress, is shown below:
+A screenshot of the board, in progress, is provided below:
 
+![image](https://github.com/user-attachments/assets/e16a9cf2-82d1-4658-a29e-afe73ae7f26d)
 
 
 ## Description
