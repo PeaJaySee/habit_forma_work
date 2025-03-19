@@ -6,6 +6,7 @@ class Habit(models.Model):
     description = models.CharField(max_length=200)
     frequency = models.CharField(max_length=20, choices=[('Daily', 'Daily'), ('Weekly', 'Weekly')])
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+    is_complete = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name

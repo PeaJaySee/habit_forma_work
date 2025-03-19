@@ -1,11 +1,11 @@
 /*GENERAL*/
 
-h1, h2, p {font-weight: bold;}
+
 
 /* HABIT TABLE */
 
 #habtable {
-    max-height: 100px;
+    max-height: 175px;
     overflow-y: auto;
 }
 #habtable table {
