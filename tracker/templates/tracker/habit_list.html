@@ -21,12 +21,27 @@
         <button type="submit">Add Habit</button>
     </form>
 
-    {% for habit in habit_list %}
-    <h2>Name: {{habit.name}}</h2>
-    <p>Dexcription: {{habit.description}}</p>
-    <p>Frequency: {{habit.frequency}}</p>
-    <p>Creator: {{habit.user}}</p>
-    {% endfor %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Frequency</th>
+                <th>Creator</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for habit in habit_list %}
+            <tr>
+                <td>{{ habit.name }}</td>
+                <td>{{ habit.description }}</td>
+                <td>{{ habit.frequency }}</td>
+                <td>{{ habit.user }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
 </body>
 
 </html>
