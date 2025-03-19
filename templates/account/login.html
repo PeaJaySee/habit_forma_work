@@ -3,6 +3,10 @@
 
 
     <h2>Login</h2>
+
+    <p>Please login to your account</p>
+    <p>Don't have an account? <a href="{% url 'account_signup' %}">Register</a></p>
+
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
