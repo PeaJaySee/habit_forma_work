@@ -14,9 +14,12 @@ class Habit(models.Model):
         return self.name
     
     def mark_complete(self):
-        self.is_complete = True
-        self.completion_date = date.today()
-        self.save()
+        today = date.today()
+        if not Progress.objects.filter(habit=self, date=today).exists():
+            self.is_complete = True
+            self.completion_date = today
+            self.save()
+            Progress.objects.create(habit=self, date=today, status=True)
 
 class Progress(models.Model):
     habit = models.ForeignKey(Habit, on_delete=models.CASCADE)
@@ -28,3 +31,4 @@ class Progress(models.Model):
     
     class Meta:
         verbose_name_plural = "Progress"
+       # unique_together = ('habit', 'date')

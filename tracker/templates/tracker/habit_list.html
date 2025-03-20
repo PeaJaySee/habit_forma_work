@@ -30,8 +30,8 @@
                     <form method="post" style="display:inline;">
                         {% csrf_token %}
                         <input type="hidden" name="habit_id" value="{{ habit.id }}">
-                        <button type="submit" name="complete" class="btn btn-success">Complete</button>
-                    </form> 
+                        <button type="submit" name="complete" class="btn btn-success" {% if habit.completion_date == today %}disabled{% endif %}>Complete</button>
+                    </form>
                     
                     <form method="post" style="display:inline;">
                         {% csrf_token %}

@@ -3,6 +3,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views import generic
 from django.views.generic import ListView, FormView
 from django.urls import reverse_lazy
+from django.utils import timezone
 from .forms import HabitForm
 from .models import Habit
 # Create your views here.
@@ -18,6 +19,11 @@ class HabitListView(LoginRequiredMixin, ListView, FormView):
 
     def get_queryset(self):
         return Habit.objects.filter(user=self.request.user)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['today'] = timezone.now().date()
+        return context
 
     def form_valid(self, form):
         habit = form.save(commit=False)
