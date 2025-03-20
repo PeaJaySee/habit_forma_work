@@ -31,5 +31,12 @@ class HabitListView(LoginRequiredMixin, ListView, FormView):
             habit = get_object_or_404(Habit, id=habit_id, user=request.user)
             habit.delete()
             return redirect('home')
+        
+        elif 'complete' in request.POST:
+            habit_id = request.POST.get('habit_id')
+            habit = get_object_or_404(Habit, id=habit_id, user=request.user)
+            habit.mark_complete()
+            return redirect('home')
+        
         else:
             return super().post(request, *args, **kwargs)

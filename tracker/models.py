@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from datetime import date
 
 class Habit(models.Model):
     name = models.CharField(max_length=100)
@@ -7,9 +8,15 @@ class Habit(models.Model):
     frequency = models.CharField(max_length=20, choices=[('Daily', 'Daily'), ('Weekly', 'Weekly')])
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     is_complete = models.BooleanField(default=False)
+    completion_date = models.DateField(null=True, blank=True)
 
     def __str__(self):
         return self.name
+    
+    def mark_complete(self):
+        self.is_complete = True
+        self.completion_date = date.today()
+        self.save()
 
 class Progress(models.Model):
     habit = models.ForeignKey(Habit, on_delete=models.CASCADE)
