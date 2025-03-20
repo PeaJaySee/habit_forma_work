@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views import generic
 from django.views.generic import ListView, FormView
@@ -24,3 +24,12 @@ class HabitListView(LoginRequiredMixin, ListView, FormView):
         habit.user = self.request.user
         habit.save()
         return super().form_valid(form)
+    
+    def post(self, request, *args, **kwargs):
+        if 'delete' in request.POST:
+            habit_id = request.POST.get('habit_id')
+            habit = get_object_or_404(Habit, id=habit_id, user=request.user)
+            habit.delete()
+            return redirect('home')
+        else:
+            return super().post(request, *args, **kwargs)

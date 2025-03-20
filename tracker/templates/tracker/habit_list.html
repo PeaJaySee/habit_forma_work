@@ -15,6 +15,7 @@
                 <th>Description</th>
                 <th>Frequency</th>
                 <th>Creator</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -24,6 +25,14 @@
                 <td>{{ habit.description }}</td>
                 <td>{{ habit.frequency }}</td>
                 <td>{{ habit.user }}</td>
+                <td>
+                    <form method="post" style="display:inline;">
+                        {% csrf_token %}
+                        <input type="hidden" name="habit_id" value="{{ habit.id }}">
+                        <button type="submit" name="delete" class="btn btn-danger">Delete</button>
+                    </form>
+                </form>
+                </td>
             </tr>
             {% endfor %}
         </tbody>
