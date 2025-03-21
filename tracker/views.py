@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views import generic
-from django.views.generic import ListView, FormView
+from django.views.generic import ListView, FormView, UpdateView
 from django.urls import reverse_lazy
 from django.utils import timezone
 from .forms import HabitForm
@@ -46,3 +46,13 @@ class HabitListView(LoginRequiredMixin, ListView, FormView):
         
         else:
             return super().post(request, *args, **kwargs)
+        
+class HabitUpdateView(LoginRequiredMixin, UpdateView):
+    model = Habit
+    form_class = HabitForm
+    template_name = 'tracker/habit_update.html'
+    success_url = reverse_lazy('home')
+    login_url = 'login'  # Redirect to login page if not authenticated
+
+    def get_queryset(self):
+        return Habit.objects.filter(user=self.request.user)

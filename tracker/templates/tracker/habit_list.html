@@ -26,7 +26,7 @@
                 <td>{{ habit.frequency }}</td>
                 <td>{{ habit.user }}</td>
                 <td>
-                    
+                    <a href="{% url 'habit_update' habit.pk %}" class="btn btn-primary">Edit</a>
                     <form method="post" style="display:inline;">
                         {% csrf_token %}
                         <input type="hidden" name="habit_id" value="{{ habit.id }}">
