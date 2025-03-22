@@ -12,8 +12,12 @@ A project board has been used to track must-have, should-have and could-have ite
 
 A screenshot of the board, in progress, is provided below:
 
-![image](https://github.com/user-attachments/assets/f28ef02d-3db4-4d77-8df3-fe45f9737fc3)
+![image](https://github.com/user-attachments/assets/f28ef02d-3db4-4d77-8df3-fe45f9737fc3) 
 
+
+Below are some early diagrams of how I intended the habit entry form and the list view of habits to look:
+
+![20250322_205939](https://github.com/user-attachments/assets/b4d5c4c8-5003-4a81-9587-4721856ad913)
 
 
 ## Description
