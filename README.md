@@ -19,7 +19,7 @@ A screenshot of the board, in progress, is provided below:
 
 This app is intended to help people to develop new habits by allowing them to enter the habit description and indicate when they have completed the habit to track their progress. 
 
-The app as an MVP will have a list view of entered habits, a form to enter new habits, and a view (probably a calendar view) to follow the user's progress.
+The app as an MVP will have a list view of entered habits, a form to enter new habits, and the ability to delete or edit existing habits.
 
 A possible future feature would be visual representation of progress (e.g. a graph showing progress over time).
 
@@ -31,7 +31,9 @@ A possible future feature would be visual representation of progress (e.g. a gra
 
 The site was created primarily using Django, HTML and CSS. 
 
-Bootstrap and Copilot AI have been used to assist and to generate some of the content (particularly user stories and acceptance criteria for the project board) and to provide the framework. Copilot has also been used to troubleshoot and provide guidance with aspects such as setting up user authentication.
+Bootstrap and Copilot AI have been used to assist and to generate some of the content (particularly user stories and acceptance criteria for the project board) and to provide the framework. Copilot has also been used to troubleshoot through suggestions in the chat window and provide guidance with aspects such as setting up user authentication and adding CRUD functionality via the relevant forms and buttons.
+
+Bootstrap was invaluable in styling the app and making it responsive across different devices; an example of this being the table of habits on the home page.
 
 Fonts were imported from Google Fonts, and the logo icon was sourced from FontAwesome.
 
