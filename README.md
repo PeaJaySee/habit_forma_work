@@ -21,6 +21,11 @@ This app is intended to help people to develop new habits by allowing them to en
 
 The app as an MVP will have a list view of entered habits, a form to enter new habits, and the ability to delete or edit existing habits.
 
+Screenshot of MVP:
+
+![image](https://github.com/user-attachments/assets/328c4a9e-1727-41f8-a818-259970934ad9)
+
+
 A possible future feature would be visual representation of progress (e.g. a graph showing progress over time).
 
 ## Colour Palette
