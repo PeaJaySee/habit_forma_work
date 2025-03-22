@@ -12,7 +12,8 @@ A project board has been used to track must-have, should-have and could-have ite
 
 A screenshot of the board, in progress, is provided below:
 
-![image](https://github.com/user-attachments/assets/e16a9cf2-82d1-4658-a29e-afe73ae7f26d)
+![image](https://github.com/user-attachments/assets/f28ef02d-3db4-4d77-8df3-fe45f9737fc3)
+
 
 
 ## Description
