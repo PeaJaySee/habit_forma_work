@@ -1,13 +1,59 @@
-/*GENERAL*/
+/* GENERAL */
 
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #645a5a;
+}
+
+main table {
+    font-family: 'Bree Serif', serif;
+}
+
+h1, h2 {
+    color: white
+}
+
+.container {
+    padding: 10px;
+}
+
+.footer {
+    background-color: #cec0c0;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar {
+    background-color: #cec0c0;
+    }
+
+/* HABIT FORM */
+
+#habform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#habform form{
+    color: white;
+    }
 
 /* HABIT TABLE */
 
 #habtable {
     max-height: 175px;
     overflow-y: auto;
+    
 }
+
 #habtable table {
     width: 100%;
     border-collapse: collapse;
@@ -15,7 +61,8 @@
 
 #habtable thead th {
     position: sticky;
+    background-color: rgba(210, 191, 48, 0.555);
     top: 0;
-    background: rgb(115, 79, 79);
     z-index: 1;
+  
 }

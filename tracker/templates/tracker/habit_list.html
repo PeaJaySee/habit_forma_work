@@ -1,13 +1,33 @@
 {%extends 'base.html'%}
 {%block content%}
- <h1>Habits list</h1>
+
+
+<!--habit entry form-->
+<h1>Habits list</h1>
+
+<section id="habform">
+<div class ="container mb-1">
+ <h2>Add Habit</h2>
+ <div class="row">   
+ <div class="col-12">   
+ 
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Add Habit</button>
     </form>
+ </div>
+ </div>
+    </section>
 
-<div id="habtable">
+
+<!--habit list-->
+
+<section>
+<div class="container">
+    <h2>Current Habits</h2>
+<div class="row"  id="habtable">
+<div class="col-12">
     <table class="table">
         <thead>
             <tr>
@@ -44,7 +64,10 @@
         </tbody>
     </table>
   </div>
-
+  </div>
+</div>
+    </section>
+</div>
 
 
 {%endblock%}
