@@ -1,9 +1,21 @@
 /* GENERAL */
 
+/* * {
+    background-color: #645a5a;
+} */
+
+h1, h2 {
+    color: white
+}
+
+form {
+    color: white;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    background-color: #645a5a;
 }
 
 main {
@@ -14,9 +26,6 @@ main table {
     font-family: 'Bree Serif', serif;
 }
 
-h1, h2 {
-    color: white
-}
 
 .container {
     padding: 10px;
