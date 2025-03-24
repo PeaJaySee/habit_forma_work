@@ -23,6 +23,7 @@ class HabitListView(LoginRequiredMixin, ListView, FormView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['today'] = timezone.now().date()
+        context['user_name'] = self.request.user.username
         return context
 
     def form_valid(self, form):

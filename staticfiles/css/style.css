@@ -61,11 +61,13 @@ h1, h2 {
 
 #habtable thead th {
     position: sticky;
-    background-color: rgba(210, 191, 48, 0.555);
+    background-color: rgba(148, 123, 12, 1);
     top: 0;
-    z-index: 1;
+    opacity:1;
   
 }
+
+
 
 /* EDIT HABIT FORM */
 

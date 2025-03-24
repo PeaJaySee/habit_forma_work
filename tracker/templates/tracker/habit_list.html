@@ -3,7 +3,7 @@
 
 
 <!--habit entry form-->
-<h1>Habits list</h1>
+<h1>{{user_name}}'s Habits List</h1>
 
 <section id="habform">
 <div class ="container mb-1">
@@ -34,7 +34,6 @@
                 <th>Name</th>
                 <th>Description</th>
                 <th>Frequency</th>
-                <th>Creator</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -44,7 +43,6 @@
                 <td>{{ habit.name }}</td>
                 <td>{{ habit.description }}</td>
                 <td>{{ habit.frequency }}</td>
-                <td>{{ habit.user }}</td>
                 <td>
                     <a href="{% url 'habit_update' habit.pk %}" class="btn btn-primary">Edit</a>
                     <form method="post" style="display:inline;">
