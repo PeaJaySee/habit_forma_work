@@ -44,17 +44,17 @@
                 <td>{{ habit.description }}</td>
                 <td>{{ habit.frequency }}</td>
                 <td>
-                    <a href="{% url 'habit_update' habit.pk %}" class="btn btn-primary">Edit</a>
+                    <a href="{% url 'habit_update' habit.pk %}" class="btn btn-primary" title="Edit Habit"><i class="fa-solid fa-file-pen"></i></a>
                     <form method="post" style="display:inline;">
                         {% csrf_token %}
                         <input type="hidden" name="habit_id" value="{{ habit.id }}">
-                        <button type="submit" name="complete" class="btn btn-success" {% if habit.completion_date == today %}disabled{% endif %}>Complete</button>
+                        <button type="submit" name="complete" class="btn btn-success" title="Mark Complete" {% if habit.completion_date == today %}disabled{% endif %}><i class="fa-solid fa-check"></i></button>
                     </form>
                     
                     <form method="post" style="display:inline;">
                         {% csrf_token %}
                         <input type="hidden" name="habit_id" value="{{ habit.id }}">
-                        <button type="submit" name="delete" class="btn btn-danger">Delete</button>
+                        <button type="submit" name="delete" class="btn btn-danger" title="Delete Habit"><i class="fa-solid fa-trash-can"></i></button>
                     </form>
                 </td>
             </tr>
