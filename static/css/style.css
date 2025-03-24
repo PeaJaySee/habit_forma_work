@@ -66,3 +66,9 @@ h1, h2 {
     z-index: 1;
   
 }
+
+/* EDIT HABIT FORM */
+
+#edit-habit form {
+    color: white;
+}

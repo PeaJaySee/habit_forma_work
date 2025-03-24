@@ -42,7 +42,7 @@ h1, h2 {
     margin-top: 20px;
 }
 
-#habform p{
+#habform form{
     color: white;
     }
 
@@ -65,4 +65,10 @@ h1, h2 {
     top: 0;
     z-index: 1;
   
+}
+
+/* EDIT HABIT FORM */
+
+#edit-habit form {
+    color: white;
 }

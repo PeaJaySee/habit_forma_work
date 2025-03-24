@@ -1,9 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
+
+
     <h1>{% if object %}Edit{% else %}Add{% endif %} Habit</h1>
+
+    <section id="edit-habit">
+        <div class ="container mb-1">
+         <h2>Edit Habit</h2>
+         <div class="row">   
+         <div class="col-12"> 
+
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="btn btn-primary">{% if object %}Update{% else %}Add{% endif %} Habit</button>
     </form>
+
+    </div>
+    </div>
+    </section>
+
 {% endblock %}
