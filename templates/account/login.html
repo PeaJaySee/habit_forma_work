@@ -5,12 +5,12 @@
     <h2>Login</h2>
 
     <p class="text-white"><strong>Welcome! Please log in to your account to continue</strong></p>
-    <p class="text-white">Don't have an account? <a href="{% url 'account_signup' %}">Register Here</a></p>
+    <p class="text-white">Don't have an account? <a href="{% url 'account_signup' %}" class="register-link" aria-label="register for an account"><strong>Register Here</strong></a></p>
 
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Login</button>
+        <button type="submit">Log in</button>
     </form>
 
 

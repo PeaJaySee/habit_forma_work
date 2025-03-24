@@ -39,6 +39,14 @@ main table {
     background-color: #cec0c0;
     }
 
+
+/*LOGIN FORM*/
+
+.register-link
+{
+    color: rgb(121, 178, 236);
+}
+
 /* HABIT FORM */
 
 #habform {
