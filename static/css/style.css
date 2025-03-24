@@ -63,13 +63,14 @@ main table {
 /* HABIT TABLE */
 
 #habtable {
-    max-height: 175px;
+    max-height: 300px;
     overflow-y: auto;
     
 }
 
 #habtable table {
     width: 100%;
+    height:100%;
     border-collapse: collapse;
 }
 

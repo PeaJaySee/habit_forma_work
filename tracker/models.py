@@ -3,8 +3,8 @@ from django.contrib.auth.models import User
 from datetime import date
 
 class Habit(models.Model):
-    name = models.CharField(max_length=100)
-    description = models.CharField(max_length=200, blank=True, null=True)
+    name = models.CharField(max_length=100, blank=True, null=True, default="None")
+    description = models.CharField(max_length=100, default="enter description here")
     frequency = models.CharField(max_length=20, choices=[('Daily', 'Daily'), ('Weekly', 'Weekly')])
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     is_complete = models.BooleanField(default=False)
