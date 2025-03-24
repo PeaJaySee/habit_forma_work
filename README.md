@@ -49,6 +49,9 @@ Fonts were imported from Google Fonts, and the logo icon was sourced from FontAw
 
 ## Testing / Validation
 
+CSS checked with W3C validator:
+
+![image](https://github.com/user-attachments/assets/ab6c15a2-44ed-46db-be75-2341885bd47d)
 
 
 ## Sources
