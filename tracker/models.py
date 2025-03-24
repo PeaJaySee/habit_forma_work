@@ -11,7 +11,7 @@ class Habit(models.Model):
     completion_date = models.DateField(null=True, blank=True)
 
     def __str__(self):
-        return self.name
+        return self.description
     
     def mark_complete(self):
         today = date.today()
