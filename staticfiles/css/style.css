@@ -70,7 +70,7 @@ main table {
 
 #habtable table {
     width: 100%;
-    height:auto;
+    height:100%;
     border-collapse: collapse;
 }
 
@@ -93,4 +93,22 @@ main table {
 
 #edit-habit form {
     color: white;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px)
+{
+    #habtable {
+        max-height: 375px;
+        overflow-y: auto;
+        
+    }
+
+    #habtable table {
+        width: 100%;
+        height:100%;
+        border-collapse: collapse;
+    }
 }
