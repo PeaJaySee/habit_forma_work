@@ -2,6 +2,8 @@
 
 ### Simple habit tracking app
 
+The intended purpose of the app is to allow users to enter habits that they wish to develop and mark them as complete each day to keep track of progress.
+
 ## URL
 
 The app can be accessed via the following link: https://habit-forma-32fb84497168.herokuapp.com/
@@ -13,6 +15,8 @@ A project board has been used to track must-have, should-have and could-have ite
 A screenshot of the board, in progress, is provided below:
 
 ![image](https://github.com/user-attachments/assets/f28ef02d-3db4-4d77-8df3-fe45f9737fc3) 
+
+The board is available here:  https://github.com/PeaJaySee/habit_project
 
 
 Below are some early diagrams of how I intended the habit entry form and the list view of habits to look:
@@ -65,7 +69,16 @@ Lighthouse scores for the main page were as follows:
 
 Desktop:
 
-![image](https://github.com/user-attachments/assets/81106db1-16d7-41df-98ae-353b9fc42bac)
+![image](https://github.com/user-attachments/assets/81106db1-16d7-41df-98ae-353b9fc42bac) 
+
+Functionality has been tested with creation of test users:
+
+- Registration, Login and Logout work as expected
+- Creation of new records works and required fields are active and prevent creation if not complete
+- Updating records works
+- Deletion of records working, and confirmation message pops up when delete button is pressed
+- Task complete button works and is disabled until next day to prevent duplicate recording of completion
+- Only logged in user's habits are shown, and main page is personalised with user name
 
 Mobile:
 
