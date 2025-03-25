@@ -17,7 +17,8 @@ A screenshot of the board, in progress, is provided below:
 
 Below are some early diagrams of how I intended the habit entry form and the list view of habits to look:
 
-![hf-project-diagram1](https://github.com/user-attachments/assets/9377bc62-a81a-4ad0-83c4-018be9e09a27)
+![hfp-diagram](https://github.com/user-attachments/assets/8c520749-071e-4e6a-9928-2d5664fec402)
+
 
 
 ## Description
@@ -35,17 +36,20 @@ A possible future feature would be visual representation of progress (e.g. a gra
 
 ## Colour Palette
 
+![image](https://github.com/user-attachments/assets/d042dc67-9447-47f5-8dcd-056eb41dac99)
 
 
 ## Technologies Used / Acknowledgements
 
 The site was created primarily using Django, HTML and CSS. 
 
-Bootstrap and Copilot AI have been used to assist and to generate some of the content (particularly user stories and acceptance criteria for the project board) and to provide the framework. Copilot has also been used to troubleshoot through suggestions in the chat window and provide guidance with aspects such as setting up user authentication and adding CRUD functionality via the relevant forms and buttons.
+Bootstrap and Copilot AI have been used to assist and to generate some of the content (particularly user stories and acceptance criteria for the project board) and to provide the framework. Copilot has also been used to troubleshoot through suggestions in the chat window and to provide guidance with aspects such as setting up user authentication and adding CRUD functionality via the relevant forms and buttons.
 
 Bootstrap was invaluable in styling the app and making it responsive across different devices; an example of this being the table of habits on the home page.
 
-Fonts were imported from Google Fonts, and the logo icon was sourced from FontAwesome.
+Fonts were imported from Google Fonts, and the logo icon and action button icons were sourced from FontAwesome.
+
+Thanks to Alexander Tastad for general support and advice, particularly around documentation. Also thanks to John Rearden for help with database issues close to deadline.
 
 ## Testing / Validation
 
@@ -53,8 +57,19 @@ CSS checked with W3C validator:
 
 ![image](https://github.com/user-attachments/assets/ab6c15a2-44ed-46db-be75-2341885bd47d)
 
+Automated testing was created for both models and views, based on copilot suggestions:
 
-## Sources
+![image](https://github.com/user-attachments/assets/464ffe9d-bac1-40ae-87e6-104dd782fb86)
+
+Lighthouse scores for the main page were as follows:
+
+Desktop:
+
+![image](https://github.com/user-attachments/assets/81106db1-16d7-41df-98ae-353b9fc42bac)
+
+Mobile:
+
+![image](https://github.com/user-attachments/assets/4e6ba896-07ec-476c-84b2-c7902b47e770)
 
 
 
