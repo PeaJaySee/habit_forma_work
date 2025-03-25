@@ -17,7 +17,8 @@ A screenshot of the board, in progress, is provided below:
 
 Below are some early diagrams of how I intended the habit entry form and the list view of habits to look:
 
-![hf-project-diagram1](https://github.com/user-attachments/assets/9377bc62-a81a-4ad0-83c4-018be9e09a27)
+![hfp-diagram](https://github.com/user-attachments/assets/8c520749-071e-4e6a-9928-2d5664fec402)
+
 
 
 ## Description
