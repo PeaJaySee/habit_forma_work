@@ -27,7 +27,7 @@ class Progress(models.Model):
     status = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"{self.habit.name} - {self.date}"
+        return f"{self.habit.description} - {self.date}"
     
     class Meta:
         verbose_name_plural = "Progress"

@@ -5,9 +5,10 @@ from django.views.generic import ListView, FormView, UpdateView
 from django.urls import reverse_lazy
 from django.utils import timezone
 from .forms import HabitForm
-from .models import Habit
+from .models import Habit, Progress
 # Create your views here.
 
+#List of habits
 
 class HabitListView(LoginRequiredMixin, ListView, FormView):
     model = Habit
@@ -24,6 +25,23 @@ class HabitListView(LoginRequiredMixin, ListView, FormView):
         context = super().get_context_data(**kwargs)
         context['today'] = timezone.now().date()
         context['user_name'] = self.request.user.username
+
+         # Add habit completion data for the last 3 days
+        habits = Habit.objects.filter(user=self.request.user)
+        today = timezone.now().date()
+        start_date = today - timezone.timedelta(days=2)
+        completion_data = []
+
+        for habit in habits:
+            progress = Progress.objects.filter(habit=habit, date__range=[start_date, today]).order_by('date')
+            completion_data.append({
+                'habit': habit.description,
+                'progress': {p.date: p.status for p in progress}
+            })
+
+        context['completion_data'] = completion_data
+        context['dates'] = [start_date + timezone.timedelta(days=i) for i in range(3)]
+        
         return context
 
     def form_valid(self, form):
@@ -47,7 +65,9 @@ class HabitListView(LoginRequiredMixin, ListView, FormView):
         
         else:
             return super().post(request, *args, **kwargs)
-        
+
+#Update habit
+
 class HabitUpdateView(LoginRequiredMixin, UpdateView):
     model = Habit
     form_class = HabitForm
@@ -57,3 +77,4 @@ class HabitUpdateView(LoginRequiredMixin, UpdateView):
 
     def get_queryset(self):
         return Habit.objects.filter(user=self.request.user)
+    

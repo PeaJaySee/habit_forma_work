@@ -40,7 +40,6 @@
         <tbody>
             {% for habit in habit_list %}
             <tr>
-               <!-- <td>{{ habit.name }}</td> -->
                 <td>{{ habit.description }}</td>
                 <td>{{ habit.frequency }}</td>
                 <td>
@@ -66,13 +65,13 @@
 </div>
     </section>
 
-    <script>
-        function confirmDelete() {
-            return confirm("Do you really want to delete this habit?");
-        }
-    </script>
 
-</div>
 
+
+<script>
+    function confirmDelete() {
+        return confirm("Do you really want to delete this habit?");
+    }
+</script>
 
 {%endblock%}
