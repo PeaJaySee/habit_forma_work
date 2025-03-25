@@ -36,6 +36,7 @@ A possible future feature would be visual representation of progress (e.g. a gra
 
 ## Colour Palette
 
+![image](https://github.com/user-attachments/assets/fa42df97-b0a1-4b0d-ac94-dc36256c0d21)
 
 
 ## Technologies Used / Acknowledgements
