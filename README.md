@@ -76,6 +76,7 @@ Functionality has been tested with creation of test users:
 - Updating records works
 - Deletion of records working, and confirmation message pops up when delete button is pressed
 - Task complete button works and is disabled until next day to prevent duplicate recording of completion
+- Only logged in user's habits are shown, and main page is personalised with user name
 
 Mobile:
 
