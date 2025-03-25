@@ -2,6 +2,8 @@
 
 ### Simple habit tracking app
 
+The intended purpose of the app is to allow users to enter habits that they wish to develop and mark them as complete each day to keep track of progress.
+
 ## URL
 
 The app can be accessed via the following link: https://habit-forma-32fb84497168.herokuapp.com/
