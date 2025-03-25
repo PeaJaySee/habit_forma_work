@@ -41,11 +41,11 @@ A possible future feature would be visual representation of progress (e.g. a gra
 
 The site was created primarily using Django, HTML and CSS. 
 
-Bootstrap and Copilot AI have been used to assist and to generate some of the content (particularly user stories and acceptance criteria for the project board) and to provide the framework. Copilot has also been used to troubleshoot through suggestions in the chat window and provide guidance with aspects such as setting up user authentication and adding CRUD functionality via the relevant forms and buttons.
+Bootstrap and Copilot AI have been used to assist and to generate some of the content (particularly user stories and acceptance criteria for the project board) and to provide the framework. Copilot has also been used to troubleshoot through suggestions in the chat window and to provide guidance with aspects such as setting up user authentication and adding CRUD functionality via the relevant forms and buttons.
 
 Bootstrap was invaluable in styling the app and making it responsive across different devices; an example of this being the table of habits on the home page.
 
-Fonts were imported from Google Fonts, and the logo icon was sourced from FontAwesome.
+Fonts were imported from Google Fonts, and the logo icon and action button icons were sourced from FontAwesome.
 
 ## Testing / Validation
 
@@ -53,8 +53,14 @@ CSS checked with W3C validator:
 
 ![image](https://github.com/user-attachments/assets/ab6c15a2-44ed-46db-be75-2341885bd47d)
 
+Automated testing was created for both models and views, based on copilot suggestions:
 
-## Sources
+![image](https://github.com/user-attachments/assets/464ffe9d-bac1-40ae-87e6-104dd782fb86)
+
+Lighthouse scores for the main page were as follows:
+
+
+## Credits / Sources
 
 
 
