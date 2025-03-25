@@ -14,6 +14,8 @@ A screenshot of the board, in progress, is provided below:
 
 ![image](https://github.com/user-attachments/assets/f28ef02d-3db4-4d77-8df3-fe45f9737fc3) 
 
+The board is available here:  https://github.com/PeaJaySee/habit_project
+
 
 Below are some early diagrams of how I intended the habit entry form and the list view of habits to look:
 
