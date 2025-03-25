@@ -67,7 +67,15 @@ Lighthouse scores for the main page were as follows:
 
 Desktop:
 
-![image](https://github.com/user-attachments/assets/81106db1-16d7-41df-98ae-353b9fc42bac)
+![image](https://github.com/user-attachments/assets/81106db1-16d7-41df-98ae-353b9fc42bac) 
+
+Functionality has been tested with creation of test users:
+
+- Registration, Login and Logout work as expected
+- Creation of new records works and required fields are active and prevent creation if not complete
+- Updating records works
+- Deletion of records working, and confirmation message pops up when delete button is pressed
+- Task complete button works and is disabled until next day to prevent duplicate recording of completion
 
 Mobile:
 
