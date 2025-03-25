@@ -36,7 +36,7 @@ A possible future feature would be visual representation of progress (e.g. a gra
 
 ## Colour Palette
 
-![image](https://github.com/user-attachments/assets/fa42df97-b0a1-4b0d-ac94-dc36256c0d21)
+![image](https://github.com/user-attachments/assets/d042dc67-9447-47f5-8dcd-056eb41dac99)
 
 
 ## Technologies Used / Acknowledgements
@@ -48,6 +48,8 @@ Bootstrap and Copilot AI have been used to assist and to generate some of the co
 Bootstrap was invaluable in styling the app and making it responsive across different devices; an example of this being the table of habits on the home page.
 
 Fonts were imported from Google Fonts, and the logo icon and action button icons were sourced from FontAwesome.
+
+Thanks to Alexander Tastad for general support and advice, particularly around documentation. Also thanks to John Rearden for help with database issues close to deadline.
 
 ## Testing / Validation
 
@@ -68,10 +70,6 @@ Desktop:
 Mobile:
 
 ![image](https://github.com/user-attachments/assets/4e6ba896-07ec-476c-84b2-c7902b47e770)
-
-
-
-## Credits / Sources
 
 
 
