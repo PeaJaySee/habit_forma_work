@@ -59,6 +59,15 @@ Automated testing was created for both models and views, based on copilot sugges
 
 Lighthouse scores for the main page were as follows:
 
+Desktop:
+
+![image](https://github.com/user-attachments/assets/81106db1-16d7-41df-98ae-353b9fc42bac)
+
+Mobile:
+
+![image](https://github.com/user-attachments/assets/4e6ba896-07ec-476c-84b2-c7902b47e770)
+
+
 
 ## Credits / Sources
 
