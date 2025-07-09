@@ -53,9 +53,9 @@ In terms of code generation, the majority of JS code was AI generated, then chec
 
 Identification and resolution of bugs and code errors was augmented by AI. Prompts were used, along the lines of "Why is x (aspect of the app) behaving in y (manner)?". A valuable lesson regarding blind reliance on AI for bug fixes was learned along the way - a database issue was exacerbated by implementing an AI suggestion of file deletion. The timely intervention of a human tutor remedied this!
 
-Copilot was asked for advice on creation of an app with a tabular layout and on how to provide user feedback (e.g. pop-ups asking for confirmation of data deletion).
+Copilot was asked for advice on creation of an app with a tabular layout and on how to provide user feedback (e.g. pop-ups asking for confirmation of data deletion). UX suggestions from AI that were considered in the design of the app were a minimalist design, with plenty of white space to keep the interface feeling approachable and the use of universally recognised icons (e.g. a bin for deletion, a tick to confirm, a cross to cancel).
 
-As previously mentioned, AI aided workflow by helping with the generation of user stories, acceptance criteria and related tasks.
+As previously mentioned, AI aided workflow by helping with the generation of user stories, acceptance criteria and related tasks. In the planning stage, Copilot provided advice on potential features that could be implemented beyond MVP.
 
 Bootstrap was invaluable in styling the app and making it responsive across different devices; an example of this being the table of habits on the home page.
 
