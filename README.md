@@ -49,7 +49,7 @@ The site was created primarily using Django, HTML and CSS.
 
 Bootstrap and Copilot AI have been used to assist and to generate some of the content (particularly user stories and acceptance criteria for the project board) and to provide the framework. Copilot has also been used to troubleshoot through suggestions in the chat window and to provide guidance with aspects such as setting up user authentication and adding CRUD functionality via the relevant forms and buttons. 
 
-In terms of code generation, the majority of JS code was AI generated, then checked for errors / conflicts before being added.
+In terms of code generation, the majority of JS code was AI generated, then checked for errors / conflicts before being added. AI guidance was used in setting up back end admin. authentication and account set-up functionality.
 
 Identification and resolution of bugs and code errors was augmented by AI. Prompts were used, along the lines of "Why is x (aspect of the app) behaving in y (manner)?". A valuable lesson regarding blind reliance on AI for bug fixes was learned along the way - a database issue was exacerbated by implementing an AI suggestion of file deletion. The timely intervention of a human tutor remedied this!
 
